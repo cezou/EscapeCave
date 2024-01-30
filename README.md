@@ -1,6 +1,6 @@
 # Escape Cave
 My first programs from **04/2021**:  
-A puzzle 2D Platformer Game and its linked website.
+A puzzle 2D Platformer Game and its linked Website.
 # [🌕 • Website](https://cezou.github.io/EscapeCave/)
 - https://cezou.github.io/EscapeCave
 
