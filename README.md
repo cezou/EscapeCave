@@ -1,4 +1,4 @@
-# EscapeCave
+# Escape Cave
 My first programs from **04/2021**:  
 A puzzle 2D Platformer Game and its linked website.
 # [🌕 • Website](https://cezou.github.io/EscapeCave/)
