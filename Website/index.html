@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="17x17" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+    <title>Escape Cave</title>
+</head>
+
+<body>
+    <section>
+        <img src="images/ciel.png" id="ciel">
+        <img src="images/moon.png" id="lune">
+        <img src="images/montagnes.png" id="montagnes">
+        <img src="images/Entreegrotte.png" id="grotte">
+        <h2 id="text">ESCAPE CAVE</h2>
+    </section>
+
+    <element>
+        <div class="2emepage">
+            <img src="images/Image2.png" id="soussol">
+            <h3 id="message">
+                Madame, Monsieur, <br><br>
+                Je vous remercie d’avoir pris le temps de lire ma lettre de motivation. <br><br>
+
+
+                L’ensemble du site et du jeu a été codé et designé manuellement de A à Z sur <br>le logiciel Visual
+                Studio, sans aucune aide d’outil en ligne de site web ou de <br>logiciel de moteur de jeu vidéo.
+                <br><br>
+                Les langages utilisés sont :
+                Pour le Site Web : HTML/CSS, JavaScript.<br>
+                Pour le jeu vidéo: C, C++, C#. <br>
+
+                Logiciels de design utilisés :
+                Adobe Illustrator, Photoshop, AfterEffect. <br><br>
+
+                Vous avez le choix de télécharger le jeu ou les fichiers sources du jeu et du site <br> <br>
+                Le Jeu est pour l'instant seulement compatible sur Windows entièrement, <br>il ne l'est pas encore pour
+                toutes les versions de Linux, mais le sera bientôt<br> complètement sur Linux et Mac!<br> <br>
+
+                Merci !
+            </h3>
+            <a class="btn btn-download" href="EscapeCave.zip" download="EscapeCave.zip">
+                <br> <br> <img src="images/Bouton.png" id="BoutonImage"></a>
+            <a class="btn btn-download2" href="CodeSource.zip" download="CodeSource.zip"> <br> <br> <img
+                    src="images/Bouton2.png" id="BoutonImage"></a>
+            <!--  <img src="images/Bouton.png" href="Escape Cave - V0.1.zip" download="Escape Cave - V0.1.zip" id="boutontelecharger"> -->
+
+            <!--<div class="Bouton">
+				<button class="Telecharger"></button>
+            </div>	-->
+        </div>
+    </element>
+    <script type="text/javascript">
+        let ciel = document.getElementById("ciel");
+        let lune = document.getElementById("lune");
+        let montagnes = document.getElementById("montagnes");
+        let grotte = document.getElementById("grotte");
+        let soussol = document.getElementById("soussol");
+        let text = document.getElementById("text");
+        let fondnoir = document.getElementById("fondnoir");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            ciel.style.top = value * 0.5 + 'px';
+            lune.style.left = value * 0.7 + 'px';
+            montagnes.style.top = value * 0.40 + 'px';
+            grotte.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+
+            function download(sFile) {
+                var s = document.createElement("script");
+                s.src = "download.php?sFilename=" + sFile;
+                s.type = "text/javascript";
+                document.body.appendChild(s);
+            }
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+*
+body
+{
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', sans-serif;
+
+    text-shadow: 1px 1px 10px #111111;
+
+}
+
+body
+{
+    background: #111111;
+    min-height:1500px;
+}
+
+
+section:before
+{
+    content:'';
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;
+
+    z-index:10;
+
+}
+
+section:after
+{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10;
+    mix-blend-mode: color;
+
+}
+section
+{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section img
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    object-fit:cover;
+    pointer-events: none;
+
+}
+
+
+element
+{
+    position:absolute;
+    width:100%;
+    height:108vh;
+    top: 100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+element img
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    object-fit:cover;
+    pointer-events: none;
+
+}
+
+element:before
+{
+    content:'';
+    position:absolute;
+    bottom:0;
+    width:100%;
+    z-index:10;
+
+
+}
+
+element:after
+{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:60000;
+
+
+}
+
+#text
+{
+    position:relative;
+    left:-15%;
+    color: #FFFFFF;
+    font-size:12em;
+    z-index:1;
+}
+
+#message
+{   
+    text-align: left;
+    font-family: 'Varela Round', sans-serif;
+
+    position:absolute;
+    left: 8%;
+    color: #FFFFFF;
+    font-size:22px; 
+    z-index:5000;
+    text-shadow: none;
+    line-height: 120%;
+    bottom:35%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.btn-download {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 80px;
+    color:#111111;
+    background-image: url(".images/Bouton.png");
+    position:absolute;
+    margin:0%;
+    bottom:15%;
+    left:8%;
+    width:18%;
+    z-index:400 ;
+}
+.btn-download2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 80px;
+    color:#111111;
+    background-image: url(".images/Bouton2.png");
+    position:absolute;
+    bottom:15%;
+    left:30%;
+    width:18%;
+    z-index:400 ;
+}
+
+#grotte
+ {
+
+     z-index:40000;
+     position:absolute;
+     top:0;
+     left:0;
+     width:100%;
+     object-fit:cover;
+     pointer-events: none;
+ }
